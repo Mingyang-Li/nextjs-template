@@ -1,36 +1,23 @@
+import Button from '@/components/Button';
 import Head from 'next/head';
-import Image from 'next/image';
 
-import styles from '@/styles/Home.module.css';
-
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>TypeScript starter for Next.js</title>
-        <meta
-          name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
-        />
+        <meta name="description" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <div className={styles.grid}>IndexPage</div>
+      <main>
+        <div>IndexPage</div>
+        <Button />
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=typescript-nextjs-starter"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{` `}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <footer>footer</footer>
     </div>
   );
-}
+};
+
+export default Home;
